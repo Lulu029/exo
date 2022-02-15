@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- HTML Meta Tags -->
-        <title>Page about me</title>
+        <title>Page Blog</title>
         <meta name="description"
             content="Site en construction contenant une présentation ainsi qu'une partie blog">
     
         <!-- Facebook Meta Tags -->
         <meta property="og:url" content="https://www.byeindonesia.com/">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Site en construction contenant une présentation ainsi qu'une partie blog">
+        <meta property="og:title" content="Page Blog">
         <meta property="og:description"
             content="Site en construction contenant une présentation ainsi qu'une partie blog">
         <meta property="og:image" content="">
@@ -22,7 +22,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta property="twitter:domain" content="byeindonesia.com">
         <meta property="twitter:url" content="https://www.byeindonesia.com/">
-        <meta name="twitter:title" content="Page about me">
+        <meta name="twitter:title" content="Page Blog">
         <meta name="twitter:description"
             content="Site en construction contenant une présentation ainsi qu'une partie blog">
         <meta name="twitter:image" content="">
@@ -35,18 +35,18 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        
-    <title>Page About me</title>
+
+    <title>Blog Bootstrap</title>
   </head>
   <body>
     <header>
-        <!-- Barre de navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <!-- LOGO -->
-                <img src="./assets/img/Sokun.png" alt="" width="80" height="80" class="d-inline-block align-text-top">
-            </a>
+      <!-- Barre de navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+          <!-- LOGO -->
+          <img src="./assets/img/Sokun.png" alt="" width="80" height="80" class="d-inline-block align-text-top">
+          </a>
             <!-- Bouton burger -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -54,7 +54,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./blog.html">Blog</a>
@@ -63,32 +63,51 @@
                     <a class="nav-link" href="#">Contact</a>
                 </li>
             </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- SECTION -->
-    <!-- Création d'un contain avec une row, composée de 2 colonnes : 1 image et un texte -->
-    <section>
-        <div class="container">
-            <div class="row gy-2 gy-md-0">    
-            <div class="col-12 col-md-6">
-            <!-- Présentation -->
-            <h1 class="mt-5">About me ...</h1>
-            <p class="mt-3 text-start fs-5">
-                Je suis actuellement en formation en Designer UI à l'AFPA de Brest. Celle-ci se déroule en présentielle majoritairement et est aussi complétée par une période en entreprise à la fin du cursus. 
-            <br>Je suis à la recherche d'un stage du 29/08/22 au 14/10/22, soit plus de 6 semaines à vos côtés.
-                Ce stage me permettra de fructifier mon profil pour ainsi développer ma carrière professionnelle dans ce domaine.
-            </p>
-            </div>
-            <!-- Image profil -->
-            <div class="col-12 col-md-6">
-                <img src="./assets/img/profil.webp" class="w-100 mt-5">
-            </div>
-            </div>
         </div>
-    </section>
+      </nav>
+  </header>
 
+  <!-- Cards = articles -->
+  <section>
+    <div class="card-group">
+    <!-- Article 9 -->
+      <div class="card">
+        <img src="./assets/img/house-g151e39b0e_640.jpg" class="card-img-top h-50 w-80" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><a href="article.html" class="link-dark">Article 9</h5></a>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="text-end"><a href="#"><i class="bi bi-share-fill"></i></a></p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <!-- Article 10 -->
+      <div class="card">
+        <img src="./assets/img/job-g5729e7ab6_640.jpg" class="card-img-top h-50 w-80" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><a href="article.html" class="link-dark">Article 10</h5></a>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="text-end"><a href="#"><i class="bi bi-share-fill"></i></a></p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+  </section>
+  <!-- Pagination -->
+  <section>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center  mt-3">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="./blog.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="bpage2.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="bpage3.html">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -99,13 +118,10 @@
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+    -->  
 
-    <!-- FOOTER + Réseaux sociaux-->
-    <footer class="mt-3 text-center">
-        Vous pouvez me suivre sur :
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-meta"></i></a>
-    </footer>
+    <!-- FOOTER -->
+  <footer>
+  </footer>
   </body>
 </html>
